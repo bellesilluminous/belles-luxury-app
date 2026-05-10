@@ -1,52 +1,85 @@
        export default function Home() {
- const products = [
+ const categories = [
   {
-    name: "Floral Dessert Glass Jar Candle",
-    price: "₹500",
-    image: "/images/dessert-candle.jpg",
+    title: "New Arrivals",
+    products: [
+      {
+        name: "Strawberry Dessert Candle",
+        price: "₹499",
+        image: "/images/dessert-candle.jpg",
+      },
+      {
+        name: "Luxury Floral Jar Candle",
+        price: "₹699",
+        image: "/images/floral-jar.jpg",
+      },
+    ],
   },
+
   {
-    name: "Honey Bliss Coconut Candle",
-    price: "₹350",
-    image: "/images/honey-bliss.jpg",
+    title: "Jar Candles",
+    products: [
+      {
+        name: "Rose Jar Candle",
+        price: "₹599",
+        image: "/images/rose-jar.jpg",
+      },
+      {
+        name: "Vanilla Luxe Jar Candle",
+        price: "₹649",
+        image: "/images/vanilla-jar.jpg",
+      },
+    ],
   },
+
   {
-    name: "Tulip Petal Layer Candle",
-    price: "₹350",
-    image: "/images/tulip.jpg",
+    title: "Floral Candles",
+    products: [
+      {
+        name: "Peony Bloom Candle",
+        price: "₹399",
+        image: "/images/peony.jpg",
+      },
+      {
+        name: "Tulip Petal Candle",
+        price: "₹350",
+        image: "/images/tulip.jpg",
+      },
+    ],
   },
+
   {
-    name: "Romantic Swan Candle",
-    price: "₹499",
-    image: "/images/romantic-swan.jpg",
+    title: "Dessert Candles",
+    products: [
+      {
+        name: "Berry Dessert Candle",
+        price: "₹499",
+        image: "/images/berry-dessert.jpg",
+      },
+      {
+        name: "Cream Delight Candle",
+        price: "₹599",
+        image: "/images/cream.jpg",
+      },
+    ],
   },
+
   {
-    name: "Snowflake Glass Candle",
-    price: "₹499",
-    image: "/images/snowflake.jpg",
-  },
-  {
-    name: "Shell Design Soy Candle",
-    price: "₹300",
-    image: "/images/shell.jpg",
-  },
-  {
-    name: "Rose Heart Tealight Set",
-    price: "₹199",
-    image: "/images/rose-heart.jpg",
-  },
-  {
-    name: "Lavender Heart Tealights",
-    price: "₹199",
-    image: "/images/lavender.jpg",
-  },
-  {
-    name: "Citrus Blossom Tealights",
-    price: "₹299",
-    image: "/images/citrus.jpg",
+    title: "Gift Collection",
+    products: [
+      {
+        name: "Luxury Gift Box Candle",
+        price: "₹999",
+        image: "/images/gift-box.jpg",
+      },
+      {
+        name: "Romantic Candle Set",
+        price: "₹1299",
+        image: "/images/romantic.jpg",
+      },
+    ],
   },
 ];
-
   return (
     <main
       style={{
