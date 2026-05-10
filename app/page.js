@@ -4,7 +4,7 @@
     title: "New Arrivals",
     products: [
       {
-        name: "Strawberry Dessert Candle",
+        name: "Strawberry Dessert Candle", 
         price: "₹499",
         image: "/images/dessert-candle.jpg",
       },
