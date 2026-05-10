@@ -5,37 +5,37 @@ export default function Home() {
     {
       title: "New Arrivals",
       image:
-        "https://bellesilluminous.in/cdn/shop/collections/new-arrivals.jpg",
+        "https://images.unsplash.com/photo-1607083206968-13611e3d76db?q=80&w=1200&auto=format&fit=crop",
     },
 
     {
       title: "Jar Candles",
       image:
-        "https://bellesilluminous.in/cdn/shop/collections/jar-candles.jpg",
+        "https://images.unsplash.com/photo-1630602969503-b5e0b6654c0c?q=80&w=1200&auto=format&fit=crop",
     },
 
     {
       title: "Floral Candles",
       image:
-        "https://bellesilluminous.in/cdn/shop/collections/floral-candles.jpg",
+        "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
     },
 
     {
       title: "Dessert Candles",
       image:
-        "https://bellesilluminous.in/cdn/shop/collections/dessert-candles.jpg",
+        "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1200&auto=format&fit=crop",
     },
 
     {
       title: "Gift Collection",
       image:
-        "https://bellesilluminous.in/cdn/shop/collections/gift-box.jpg",
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=1200&auto=format&fit=crop",
     },
 
     {
       title: "Aroma Wax Melts",
       image:
-        "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1602874801006-e26bcb09689b?q=80&w=1200&auto=format&fit=crop",
     },
 
     {
@@ -47,7 +47,7 @@ export default function Home() {
     {
       title: "Glass Bowl Candles",
       image:
-        "https://images.unsplash.com/photo-1602874801006-e26bcb09689b?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1602524813144-f86d9db0f7f5?q=80&w=1200&auto=format&fit=crop",
     },
 
     {
@@ -109,9 +109,8 @@ export default function Home() {
 
         <div
           style={{
-            height: "100vh",
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1602874801006-e26bcb09689b?q=80&w=1800&auto=format&fit=crop')",
+            height: "95vh",
+            backgroundImage: "url('/images/hero-bg.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             position: "relative",
@@ -125,7 +124,7 @@ export default function Home() {
             style={{
               position: "absolute",
               inset: 0,
-              background: "rgba(0,0,0,0.45)",
+              background: "rgba(0,0,0,0.25)",
             }}
           />
 
@@ -139,12 +138,14 @@ export default function Home() {
             <h1
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "110px",
-                color: "#f7e7ce",
+                fontSize: "120px",
                 fontWeight: "700",
-                marginBottom: "25px",
-                lineHeight: "1",
+                fontStyle: "italic",
+                color: "#f5e6c8",
                 letterSpacing: "2px",
+                textShadow: "0 6px 25px rgba(0,0,0,0.6)",
+                lineHeight: "1",
+                marginBottom: "20px",
               }}
             >
               Belles Illuminous
@@ -152,10 +153,11 @@ export default function Home() {
 
             <p
               style={{
-                color: "#f7e7ce",
-                fontSize: "26px",
+                color: "#f5e6c8",
+                fontSize: "24px",
                 letterSpacing: "4px",
                 marginBottom: "45px",
+                textShadow: "0 4px 15px rgba(0,0,0,0.5)",
               }}
             >
               LUXURY HANDMADE CANDLES
@@ -168,11 +170,10 @@ export default function Home() {
                 padding: "18px 55px",
                 background: "transparent",
                 border: "2px solid #d4af37",
-                color: "#f7e7ce",
+                color: "#f5e6c8",
                 fontSize: "18px",
                 letterSpacing: "3px",
                 cursor: "pointer",
-                transition: "0.3s",
               }}
             >
               SHOP CANDLES
@@ -180,21 +181,21 @@ export default function Home() {
           </div>
         </div>
 
-        {/* COLLECTION SECTION */}
+        {/* COLLECTIONS */}
 
         <div
           style={{
-            maxWidth: "1400px",
+            maxWidth: "1450px",
             margin: "0 auto",
-            padding: "90px 30px",
+            padding: "100px 30px",
           }}
         >
           <h2
             style={{
               textAlign: "center",
-              fontSize: "54px",
-              color: "#3e3129",
+              fontSize: "60px",
               marginBottom: "70px",
+              color: "#3e3129",
               fontFamily: "'Cormorant Garamond', serif",
             }}
           >
@@ -213,7 +214,7 @@ export default function Home() {
               <div
                 key={category.title}
                 style={{
-                  background: "white",
+                  background: "#fff",
                   borderRadius: "22px",
                   overflow: "hidden",
                   boxShadow: "0 10px 35px rgba(0,0,0,0.08)",
@@ -230,16 +231,12 @@ export default function Home() {
                   }}
                 />
 
-                <div
-                  style={{
-                    padding: "26px",
-                  }}
-                >
+                <div style={{ padding: "28px" }}>
                   <h3
                     style={{
-                      fontSize: "30px",
+                      fontSize: "32px",
                       color: "#3e3129",
-                      marginBottom: "20px",
+                      marginBottom: "22px",
                       fontFamily: "'Cormorant Garamond', serif",
                     }}
                   >
@@ -250,13 +247,13 @@ export default function Home() {
                     style={{
                       width: "100%",
                       padding: "16px",
+                      borderRadius: "50px",
+                      border: "none",
                       background: "#3e3129",
                       color: "white",
-                      border: "none",
-                      borderRadius: "50px",
-                      fontSize: "16px",
-                      cursor: "pointer",
+                      fontSize: "15px",
                       letterSpacing: "2px",
+                      cursor: "pointer",
                     }}
                   >
                     EXPLORE COLLECTION
