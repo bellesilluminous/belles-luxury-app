@@ -35,52 +35,60 @@ export default function Home() {
     <main
       style={{
         minHeight: "100vh",
-        background: "#f7f1eb",
-        fontFamily: "Georgia, serif",
+        background:
+          "linear-gradient(to bottom, #f8f1ea, #efe3d7, #f7f1eb)",
+        fontFamily: "'Times New Roman', serif",
       }}
     >
       {/* HERO SECTION */}
 
-      <div
+      <section
         style={{
           position: "relative",
-          height: "90vh",
+          height: "100vh",
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1800&auto=format&fit=crop')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
           overflow: "hidden",
-          marginBottom: "80px",
         }}
       >
-        <img
-          src="/images/hero.jpg"
-          alt="Luxury Candles"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-        />
+        {/* DARK OVERLAY */}
 
         <div
           style={{
             position: "absolute",
             inset: "0",
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.45))",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
+              "linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.55))",
+          }}
+        />
+
+        {/* HERO CONTENT */}
+
+        <div
+          style={{
+            position: "relative",
+            zIndex: "2",
             padding: "20px",
+            maxWidth: "900px",
           }}
         >
           <h1
             style={{
-              fontSize: "78px",
               color: "white",
-              marginBottom: "25px",
+              fontSize: "88px",
+              fontWeight: "bold",
+              marginBottom: "30px",
               letterSpacing: "2px",
-              fontFamily: "cursive",
-              textShadow: "0 4px 20px rgba(0,0,0,0.4)",
+              lineHeight: "1.1",
+              fontFamily: "Georgia, serif",
+              fontStyle: "italic",
+              textShadow: "0 6px 30px rgba(0,0,0,0.55)",
             }}
           >
             Belles Illuminous
@@ -88,14 +96,13 @@ export default function Home() {
 
           <p
             style={{
+              color: "#f5e9dd",
               fontSize: "24px",
-              color: "#f8ebe1",
-              maxWidth: "750px",
-              lineHeight: "1.7",
-              marginBottom: "35px",
+              lineHeight: "1.8",
+              marginBottom: "40px",
             }}
           >
-            Luxury handmade candles crafted to turn moments into memories.
+            Luxury handmade candles crafted to transform moments into timeless memories.
           </p>
 
           <button
@@ -106,84 +113,108 @@ export default function Home() {
               background: "#f3dfcd",
               color: "#3e3129",
               fontSize: "16px",
-              cursor: "pointer",
-              letterSpacing: "1px",
               fontWeight: "bold",
+              letterSpacing: "1px",
+              cursor: "pointer",
+              boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
             }}
           >
             Explore Collections
           </button>
         </div>
-      </div>
+      </section>
 
       {/* CATEGORY SECTION */}
 
-      <div
+      <section
         style={{
-          maxWidth: "1300px",
+          maxWidth: "1350px",
           margin: "0 auto",
-          display: "grid",
-          gridTemplateColumns:
-            "repeat(auto-fit, minmax(320px, 1fr))",
-          gap: "35px",
-          padding: "0 20px 80px",
+          padding: "90px 20px",
         }}
       >
-        {categories.map((category) => (
-          <div
-            key={category.title}
-            style={{
-              background: "white",
-              borderRadius: "35px",
-              overflow: "hidden",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-            }}
-          >
-            <img
-              src={category.image}
-              alt={category.title}
-              style={{
-                width: "100%",
-                height: "420px",
-                objectFit: "cover",
-              }}
-            />
+        <h2
+          style={{
+            textAlign: "center",
+            fontSize: "54px",
+            color: "#3e3129",
+            marginBottom: "70px",
+            fontStyle: "italic",
+            letterSpacing: "1px",
+          }}
+        >
+          Luxury Collections
+        </h2>
 
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns:
+              "repeat(auto-fit, minmax(320px, 1fr))",
+            gap: "40px",
+          }}
+        >
+          {categories.map((category) => (
             <div
+              key={category.title}
               style={{
-                padding: "30px",
-                textAlign: "center",
+                background: "rgba(255,255,255,0.75)",
+                backdropFilter: "blur(12px)",
+                borderRadius: "38px",
+                overflow: "hidden",
+                boxShadow: "0 12px 35px rgba(0,0,0,0.12)",
+                transition: "0.3s ease",
               }}
             >
-              <h2
-                style={{
-                  fontSize: "34px",
-                  color: "#3e3129",
-                  marginBottom: "25px",
-                }}
-              >
-                {category.title}
-              </h2>
-
-              <button
+              <img
+                src={category.image}
+                alt={category.title}
                 style={{
                   width: "100%",
-                  padding: "16px",
-                  borderRadius: "50px",
-                  border: "none",
-                  background: "#3e3129",
-                  color: "white",
-                  fontSize: "16px",
-                  cursor: "pointer",
-                  letterSpacing: "1px",
+                  height: "430px",
+                  objectFit: "cover",
+                }}
+              />
+
+              <div
+                style={{
+                  padding: "32px",
+                  textAlign: "center",
                 }}
               >
-                Explore Collection
-              </button>
+                <h3
+                  style={{
+                    fontSize: "34px",
+                    color: "#3e3129",
+                    marginBottom: "25px",
+                    fontStyle: "italic",
+                  }}
+                >
+                  {category.title}
+                </h3>
+
+                <button
+                  style={{
+                    width: "100%",
+                    padding: "17px",
+                    borderRadius: "50px",
+                    border: "none",
+                    background: "#3e3129",
+                    color: "white",
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    letterSpacing: "1px",
+                    cursor: "pointer",
+                    boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
+                  }}
+                >
+                  Explore Collection
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
