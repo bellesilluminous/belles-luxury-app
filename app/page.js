@@ -2,22 +2,67 @@ export default function Home() {
   const categories = [
     {
       title: "New Arrivals",
-      image: "/images/dessert-candle.jpg",
+      image: "/images/new-arrivals.jpg",
     },
 
     {
       title: "Jar Candles",
-      image: "/images/rose-jar.jpg",
-    },
-
-    {
-      title: "Floral Candles",
-      image: "/images/peony.jpg",
+      image: "/images/jar-candles.jpg",
     },
 
     {
       title: "Dessert Candles",
-      image: "/images/berry-dessert.jpg",
+      image: "/images/dessert-candle.jpg",
+    },
+
+    {
+      title: "Floral Candles",
+      image: "/images/floral-candles.jpg",
+    },
+
+    {
+      title: "Scented Candles",
+      image: "/images/scented-candles.jpg",
+    },
+
+    {
+      title: "Artisan Candles",
+      image: "/images/artisan-candles.jpg",
+    },
+
+    {
+      title: "Artisan Glass Bowl Candles",
+      image: "/images/glass-bowl.jpg",
+    },
+
+    {
+      title: "Candles in Wooden Bowls",
+      image: "/images/wooden-bowl.jpg",
+    },
+
+    {
+      title: "Buddha Candles",
+      image: "/images/buddha-candles.jpg",
+    },
+
+    {
+      title: "Flower & Bouquet Candles",
+      image: "/images/flower-bouquet.jpg",
+    },
+
+    {
+      title: "Best Sellers",
+      image: "/images/best-sellers.jpg",
+    },
+
+    {
+      title: "Aroma Wax Melts",
+      image: "/images/aroma-wax.jpg",
+    },
+
+    {
+      title: "Tealight Candles",
+      image: "/images/tealight.jpg",
     },
 
     {
@@ -36,7 +81,7 @@ export default function Home() {
       style={{
         minHeight: "100vh",
         background:
-          "linear-gradient(to bottom, #f8f1ea, #efe3d7, #f7f1eb)",
+          "linear-gradient(to bottom, #f8f3ee, #f3e6d8, #efe1d2)",
         fontFamily: "'Times New Roman', serif",
       }}
     >
@@ -47,7 +92,7 @@ export default function Home() {
           position: "relative",
           height: "100vh",
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1800&auto=format&fit=crop')",
+            "url('/images/hero.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
@@ -57,38 +102,37 @@ export default function Home() {
           overflow: "hidden",
         }}
       >
-        {/* DARK OVERLAY */}
+        {/* OVERLAY */}
 
         <div
           style={{
             position: "absolute",
             inset: "0",
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.55))",
+              "linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.65))",
           }}
         />
 
-        {/* HERO CONTENT */}
+        {/* CONTENT */}
 
         <div
           style={{
             position: "relative",
             zIndex: "2",
             padding: "20px",
-            maxWidth: "900px",
+            maxWidth: "950px",
           }}
         >
           <h1
             style={{
               color: "white",
-              fontSize: "88px",
-              fontWeight: "bold",
-              marginBottom: "30px",
+              fontSize: "92px",
+              fontWeight: "700",
+              marginBottom: "28px",
               letterSpacing: "2px",
               lineHeight: "1.1",
-              fontFamily: "Georgia, serif",
               fontStyle: "italic",
-              textShadow: "0 6px 30px rgba(0,0,0,0.55)",
+              textShadow: "0 6px 30px rgba(0,0,0,0.6)",
             }}
           >
             Belles Illuminous
@@ -97,12 +141,13 @@ export default function Home() {
           <p
             style={{
               color: "#f5e9dd",
-              fontSize: "24px",
+              fontSize: "25px",
               lineHeight: "1.8",
-              marginBottom: "40px",
+              marginBottom: "42px",
             }}
           >
-            Luxury handmade candles crafted to transform moments into timeless memories.
+            Luxury handmade candles crafted to transform moments
+            into timeless memories.
           </p>
 
           <button
@@ -124,21 +169,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CATEGORY SECTION */}
+      {/* COLLECTION SECTION */}
 
       <section
         style={{
-          maxWidth: "1350px",
+          maxWidth: "1450px",
           margin: "0 auto",
-          padding: "90px 20px",
+          padding: "90px 25px",
         }}
       >
         <h2
           style={{
             textAlign: "center",
-            fontSize: "54px",
+            fontSize: "58px",
             color: "#3e3129",
-            marginBottom: "70px",
+            marginBottom: "75px",
             fontStyle: "italic",
             letterSpacing: "1px",
           }}
@@ -151,16 +196,16 @@ export default function Home() {
             display: "grid",
             gridTemplateColumns:
               "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "40px",
+            gap: "38px",
           }}
         >
           {categories.map((category) => (
             <div
               key={category.title}
               style={{
-                background: "rgba(255,255,255,0.75)",
-                backdropFilter: "blur(12px)",
-                borderRadius: "38px",
+                background: "rgba(255,255,255,0.82)",
+                backdropFilter: "blur(10px)",
+                borderRadius: "34px",
                 overflow: "hidden",
                 boxShadow: "0 12px 35px rgba(0,0,0,0.12)",
                 transition: "0.3s ease",
@@ -171,23 +216,24 @@ export default function Home() {
                 alt={category.title}
                 style={{
                   width: "100%",
-                  height: "430px",
+                  height: "420px",
                   objectFit: "cover",
                 }}
               />
 
               <div
                 style={{
-                  padding: "32px",
+                  padding: "30px",
                   textAlign: "center",
                 }}
               >
                 <h3
                   style={{
-                    fontSize: "34px",
+                    fontSize: "30px",
                     color: "#3e3129",
-                    marginBottom: "25px",
+                    marginBottom: "24px",
                     fontStyle: "italic",
+                    lineHeight: "1.4",
                   }}
                 >
                   {category.title}
@@ -196,7 +242,7 @@ export default function Home() {
                 <button
                   style={{
                     width: "100%",
-                    padding: "17px",
+                    padding: "16px",
                     borderRadius: "50px",
                     border: "none",
                     background: "#3e3129",
