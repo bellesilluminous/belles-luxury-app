@@ -1,261 +1,272 @@
+import Head from "next/head";
+
 export default function Home() {
   const categories = [
     {
       title: "New Arrivals",
-      image: "/images/new-arrivals.jpg",
+      image:
+        "https://bellesilluminous.in/cdn/shop/collections/new-arrivals.jpg",
     },
 
     {
       title: "Jar Candles",
-      image: "/images/jar-candles.jpg",
-    },
-
-    {
-      title: "Dessert Candles",
-      image: "/images/dessert-candle.jpg",
+      image:
+        "https://bellesilluminous.in/cdn/shop/collections/jar-candles.jpg",
     },
 
     {
       title: "Floral Candles",
-      image: "/images/floral-candles.jpg",
+      image:
+        "https://bellesilluminous.in/cdn/shop/collections/floral-candles.jpg",
     },
 
     {
-      title: "Scented Candles",
-      image: "/images/scented-candles.jpg",
-    },
-
-    {
-      title: "Artisan Candles",
-      image: "/images/artisan-candles.jpg",
-    },
-
-    {
-      title: "Artisan Glass Bowl Candles",
-      image: "/images/glass-bowl.jpg",
-    },
-
-    {
-      title: "Candles in Wooden Bowls",
-      image: "/images/wooden-bowl.jpg",
-    },
-
-    {
-      title: "Buddha Candles",
-      image: "/images/buddha-candles.jpg",
-    },
-
-    {
-      title: "Flower & Bouquet Candles",
-      image: "/images/flower-bouquet.jpg",
-    },
-
-    {
-      title: "Best Sellers",
-      image: "/images/best-sellers.jpg",
-    },
-
-    {
-      title: "Aroma Wax Melts",
-      image: "/images/aroma-wax.jpg",
-    },
-
-    {
-      title: "Tealight Candles",
-      image: "/images/tealight.jpg",
+      title: "Dessert Candles",
+      image:
+        "https://bellesilluminous.in/cdn/shop/collections/dessert-candles.jpg",
     },
 
     {
       title: "Gift Collection",
-      image: "/images/gift-box.jpg",
+      image:
+        "https://bellesilluminous.in/cdn/shop/collections/gift-box.jpg",
     },
 
     {
-      title: "Romantic Collection",
-      image: "/images/romantic.jpg",
+      title: "Aroma Wax Melts",
+      image:
+        "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Artisan Candles",
+      image:
+        "https://images.unsplash.com/photo-1630602969503-b5e0b6654c0c?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Glass Bowl Candles",
+      image:
+        "https://images.unsplash.com/photo-1602874801006-e26bcb09689b?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Best Sellers",
+      image:
+        "https://images.unsplash.com/photo-1608181831718-4e2f7b3f6a67?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Buddha Candles",
+      image:
+        "https://images.unsplash.com/photo-1612196808214-b7e239e5c9e8?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Wooden Bowl Candles",
+      image:
+        "https://images.unsplash.com/photo-1603204077779-bed963ea7dc2?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Flower & Bouquet Candles",
+      image:
+        "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Scented Candles",
+      image:
+        "https://images.unsplash.com/photo-1608181831652-c2b0d3e67d5d?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Tealight Candles",
+      image:
+        "https://images.unsplash.com/photo-1602524813144-f86d9db0f7f5?q=80&w=1200&auto=format&fit=crop",
     },
   ];
 
   return (
-    <main
-      style={{
-        background:
-          "linear-gradient(to bottom, #f8f3ef, #f3e5d7, #efe1d3)",
-        minHeight: "100vh",
-        fontFamily: "Georgia, serif",
-      }}
-    >
-      {/* HERO SECTION */}
+    <>
+      <Head>
+        <title>Belles Illuminous</title>
 
-      <section
-        style={{
-          position: "relative",
-          height: "100vh",
-          backgroundImage: "url('/images/hero.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlign: "center",
-        }}
-      >
-        {/* DARK LUXURY OVERLAY */}
-
-        <div
-          style={{
-            position: "absolute",
-            inset: "0",
-            background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.7))",
-          }}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
         />
+      </Head>
 
-        {/* HERO CONTENT */}
-
-        <div
-          style={{
-            position: "relative",
-            zIndex: "2",
-            padding: "20px",
-            maxWidth: "950px",
-          }}
-        >
-          <h1
-            style={{
-              fontSize: "110px",
-              color: "#fff8f0",
-              fontWeight: "900",
-              letterSpacing: "3px",
-              marginBottom: "28px",
-              lineHeight: "1",
-              fontFamily: "cursive",
-              textShadow: "0 8px 35px rgba(0,0,0,0.6)",
-            }}
-          >
-            Belles Illuminous
-          </h1>
-
-          <p
-            style={{
-              fontSize: "26px",
-              color: "#f5e9dd",
-              lineHeight: "1.8",
-              marginBottom: "42px",
-            }}
-          >
-            Luxury handmade candles crafted to transform
-            everyday moments into timeless memories.
-          </p>
-
-          <button
-            style={{
-              padding: "18px 46px",
-              borderRadius: "50px",
-              border: "none",
-              background: "#f3dfcd",
-              color: "#3e3129",
-              fontSize: "16px",
-              fontWeight: "bold",
-              letterSpacing: "1px",
-              cursor: "pointer",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
-            }}
-          >
-            Explore Collections
-          </button>
-        </div>
-      </section>
-
-      {/* COLLECTIONS */}
-
-      <section
+      <main
         style={{
-          maxWidth: "1450px",
-          margin: "0 auto",
-          padding: "90px 25px",
+          background: "#f8f3ed",
+          minHeight: "100vh",
+          fontFamily: "Arial",
         }}
       >
-        <h2
-          style={{
-            textAlign: "center",
-            fontSize: "58px",
-            color: "#3e3129",
-            marginBottom: "75px",
-            fontStyle: "italic",
-            letterSpacing: "1px",
-          }}
-        >
-          Luxury Collections
-        </h2>
+        {/* HERO SECTION */}
 
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "38px",
+            height: "100vh",
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1602874801006-e26bcb09689b?q=80&w=1800&auto=format&fit=crop')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            position: "relative",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
           }}
         >
-          {categories.map((category) => (
-            <div
-              key={category.title}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background: "rgba(0,0,0,0.45)",
+            }}
+          />
+
+          <div
+            style={{
+              position: "relative",
+              zIndex: 2,
+              padding: "20px",
+            }}
+          >
+            <h1
               style={{
-                background: "rgba(255,255,255,0.82)",
-                borderRadius: "34px",
-                overflow: "hidden",
-                boxShadow: "0 12px 35px rgba(0,0,0,0.12)",
+                fontFamily: "'Cormorant Garamond', serif",
+                fontSize: "110px",
+                color: "#f7e7ce",
+                fontWeight: "700",
+                marginBottom: "25px",
+                lineHeight: "1",
+                letterSpacing: "2px",
               }}
             >
-              <img
-                src={category.image}
-                alt={category.title}
-                style={{
-                  width: "100%",
-                  height: "420px",
-                  objectFit: "cover",
-                }}
-              />
+              Belles Illuminous
+            </h1>
 
+            <p
+              style={{
+                color: "#f7e7ce",
+                fontSize: "26px",
+                letterSpacing: "4px",
+                marginBottom: "45px",
+              }}
+            >
+              LUXURY HANDMADE CANDLES
+              <br />
+              CRAFTED TO TRANSFORM EVERY MOMENT
+            </p>
+
+            <button
+              style={{
+                padding: "18px 55px",
+                background: "transparent",
+                border: "2px solid #d4af37",
+                color: "#f7e7ce",
+                fontSize: "18px",
+                letterSpacing: "3px",
+                cursor: "pointer",
+                transition: "0.3s",
+              }}
+            >
+              SHOP CANDLES
+            </button>
+          </div>
+        </div>
+
+        {/* COLLECTION SECTION */}
+
+        <div
+          style={{
+            maxWidth: "1400px",
+            margin: "0 auto",
+            padding: "90px 30px",
+          }}
+        >
+          <h2
+            style={{
+              textAlign: "center",
+              fontSize: "54px",
+              color: "#3e3129",
+              marginBottom: "70px",
+              fontFamily: "'Cormorant Garamond', serif",
+            }}
+          >
+            Our Collections
+          </h2>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns:
+                "repeat(auto-fit, minmax(320px, 1fr))",
+              gap: "35px",
+            }}
+          >
+            {categories.map((category) => (
               <div
+                key={category.title}
                 style={{
-                  padding: "30px",
-                  textAlign: "center",
+                  background: "white",
+                  borderRadius: "22px",
+                  overflow: "hidden",
+                  boxShadow: "0 10px 35px rgba(0,0,0,0.08)",
+                  transition: "0.3s",
                 }}
               >
-                <h3
-                  style={{
-                    fontSize: "30px",
-                    color: "#3e3129",
-                    marginBottom: "24px",
-                    fontStyle: "italic",
-                    lineHeight: "1.4",
-                  }}
-                >
-                  {category.title}
-                </h3>
-
-                <button
+                <img
+                  src={category.image}
+                  alt={category.title}
                   style={{
                     width: "100%",
-                    padding: "16px",
-                    borderRadius: "50px",
-                    border: "none",
-                    background: "#3e3129",
-                    color: "white",
-                    fontSize: "16px",
-                    fontWeight: "bold",
-                    letterSpacing: "1px",
-                    cursor: "pointer",
+                    height: "340px",
+                    objectFit: "cover",
+                  }}
+                />
+
+                <div
+                  style={{
+                    padding: "26px",
                   }}
                 >
-                  Explore Collection
-                </button>
+                  <h3
+                    style={{
+                      fontSize: "30px",
+                      color: "#3e3129",
+                      marginBottom: "20px",
+                      fontFamily: "'Cormorant Garamond', serif",
+                    }}
+                  >
+                    {category.title}
+                  </h3>
+
+                  <button
+                    style={{
+                      width: "100%",
+                      padding: "16px",
+                      background: "#3e3129",
+                      color: "white",
+                      border: "none",
+                      borderRadius: "50px",
+                      fontSize: "16px",
+                      cursor: "pointer",
+                      letterSpacing: "2px",
+                    }}
+                  >
+                    EXPLORE COLLECTION
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </section>
-    </main>
+      </main>
+    </>
   );
 }
