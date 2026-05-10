@@ -1,86 +1,86 @@
-       export default function Home() {
- const categories = [
-  {
-    title: "New Arrivals",
-    products: [
-      {
-        name: "Strawberry Dessert Candle", 
-        price: "₹499",
-        image: "/images/dessert-candle.jpg",
-      },
-      {
-        name: "Luxury Floral Jar Candle",
-        price: "₹699",
-        image: "/images/floral-jar.jpg",
-      },
-    ],
-  },
+export default function Home() {
+  const categories = [
+    {
+      title: "New Arrivals",
+      products: [
+        {
+          name: "Strawberry Dessert Candle",
+          price: "₹499",
+          image: "/images/dessert-candle.jpg",
+        },
+        {
+          name: "Luxury Floral Jar Candle",
+          price: "₹699",
+          image: "/images/floral-jar.jpg",
+        },
+      ],
+    },
 
-  {
-    title: "Jar Candles",
-    products: [
-      {
-        name: "Rose Jar Candle",
-        price: "₹599",
-        image: "/images/rose-jar.jpg",
-      },
-      {
-        name: "Vanilla Luxe Jar Candle",
-        price: "₹649",
-        image: "/images/vanilla-jar.jpg",
-      },
-    ],
-  },
+    {
+      title: "Jar Candles",
+      products: [
+        {
+          name: "Rose Jar Candle",
+          price: "₹599",
+          image: "/images/rose-jar.jpg",
+        },
+        {
+          name: "Vanilla Luxe Jar Candle",
+          price: "₹649",
+          image: "/images/vanilla-jar.jpg",
+        },
+      ],
+    },
 
-  {
-    title: "Floral Candles",
-    products: [
-      {
-        name: "Peony Bloom Candle",
-        price: "₹399",
-        image: "/images/peony.jpg",
-      },
-      {
-        name: "Tulip Petal Candle",
-        price: "₹350",
-        image: "/images/tulip.jpg",
-      },
-    ],
-  },
+    {
+      title: "Floral Candles",
+      products: [
+        {
+          name: "Peony Bloom Candle",
+          price: "₹399",
+          image: "/images/peony.jpg",
+        },
+        {
+          name: "Tulip Petal Candle",
+          price: "₹350",
+          image: "/images/tulip.jpg",
+        },
+      ],
+    },
 
-  {
-    title: "Dessert Candles",
-    products: [
-      {
-        name: "Berry Dessert Candle",
-        price: "₹499",
-        image: "/images/berry-dessert.jpg",
-      },
-      {
-        name: "Cream Delight Candle",
-        price: "₹599",
-        image: "/images/cream.jpg",
-      },
-    ],
-  },
+    {
+      title: "Dessert Candles",
+      products: [
+        {
+          name: "Berry Dessert Candle",
+          price: "₹499",
+          image: "/images/berry-dessert.jpg",
+        },
+        {
+          name: "Cream Delight Candle",
+          price: "₹599",
+          image: "/images/cream.jpg",
+        },
+      ],
+    },
 
-  {
-    title: "Gift Collection",
-    products: [
-      {
-        name: "Luxury Gift Box Candle",
-        price: "₹999",
-        image: "/images/gift-box.jpg",
-      },
-      {
-        name: "Romantic Candle Set",
-        price: "₹1299",
-        image: "/images/romantic.jpg",
-      },
-    ],
-  },
-];
-          
+    {
+      title: "Gift Collection",
+      products: [
+        {
+          name: "Luxury Gift Box Candle",
+          price: "₹999",
+          image: "/images/gift-box.jpg",
+        },
+        {
+          name: "Romantic Candle Set",
+          price: "₹1299",
+          image: "/images/romantic.jpg",
+        },
+      ],
+    },
+  ];
+
   return (
     <main
       style={{
@@ -90,10 +90,15 @@
         fontFamily: "Arial",
       }}
     >
-      <div style={{ textAlign: "center", marginBottom: "60px" }}>
+      <div
+        style={{
+          textAlign: "center",
+          marginBottom: "70px",
+        }}
+      >
         <h1
           style={{
-            fontSize: "54px",
+            fontSize: "56px",
             color: "#3e3129",
             marginBottom: "20px",
           }}
@@ -103,7 +108,7 @@
 
         <p
           style={{
-            fontSize: "20px",
+            fontSize: "22px",
             color: "#6c5b50",
           }}
         >
@@ -111,81 +116,99 @@
         </p>
       </div>
 
-      <h2
-        style={{
-          textAlign: "center",
-          color: "#3e3129",
-          marginBottom: "40px",
-          fontSize: "36px",
-        }}
-      >
-        Featured Collection
-      </h2>
-
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: "30px",
-          maxWidth: "1200px",
+          maxWidth: "1300px",
           margin: "0 auto",
         }}
       >
-        {products.map((product) => (
+        {categories.map((category) => (
           <div
-            key={product.name}
+            key={category.title}
             style={{
-              background: "white",
-              borderRadius: "35px",
-              overflow: "hidden",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
+              marginBottom: "80px",
             }}
           >
-            <img
-              src={product.image}
-              alt={product.name}
+            <h2
               style={{
-                width: "100%",
-                height: "380px",
-                objectFit: "cover",
+                color: "#3e3129",
+                fontSize: "38px",
+                marginBottom: "30px",
               }}
-            />
+            >
+              {category.title}
+            </h2>
 
-            <div style={{ padding: "24px" }}>
-              <h3
-                style={{
-                  fontSize: "24px",
-                  marginBottom: "10px",
-                  color: "#3e3129",
-                }}
-              >
-                {product.name}
-              </h3>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns:
+                  "repeat(auto-fit, minmax(280px, 1fr))",
+                gap: "30px",
+              }}
+            >
+              {category.products.map((product) => (
+                <div
+                  key={product.name}
+                  style={{
+                    background: "white",
+                    borderRadius: "35px",
+                    overflow: "hidden",
+                    boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
+                  }}
+                >
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    style={{
+                      width: "100%",
+                      height: "380px",
+                      objectFit: "cover",
+                    }}
+                  />
 
-              <p
-                style={{
-                  fontSize: "20px",
-                  marginBottom: "20px",
-                  color: "#6c5b50",
-                }}
-              >
-                {product.price}
-              </p>
+                  <div
+                    style={{
+                      padding: "24px",
+                    }}
+                  >
+                    <h3
+                      style={{
+                        fontSize: "24px",
+                        marginBottom: "10px",
+                        color: "#3e3129",
+                      }}
+                    >
+                      {product.name}
+                    </h3>
 
-              <button
-                style={{
-                  width: "100%",
-                  padding: "14px",
-                  borderRadius: "50px",
-                  border: "none",
-                  background: "#3e3129",
-                  color: "white",
-                  fontSize: "16px",
-                  cursor: "pointer",
-                }}
-              >
-                Add to Cart
-              </button>
+                    <p
+                      style={{
+                        fontSize: "20px",
+                        marginBottom: "20px",
+                        color: "#6c5b50",
+                      }}
+                    >
+                      {product.price}
+                    </p>
+
+                    <button
+                      style={{
+                        width: "100%",
+                        padding: "14px",
+                        borderRadius: "50px",
+                        border: "none",
+                        background: "#3e3129",
+                        color: "white",
+                        fontSize: "16px",
+                        cursor: "pointer",
+                      }}
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         ))}
