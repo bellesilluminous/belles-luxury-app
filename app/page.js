@@ -1,24 +1,24 @@
        export default function Home() {
-  const products = [
-    {
-      name: "Vanilla Dream Candle",
-      price: "₹499",
-      image:
-        "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-      name: "Rose Aura Candle",
-      price: "₹699",
-      image:
-        "https://images.unsplash.com/photo-1602872029708-84d970d33891?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-      name: "Luxury Gift Box",
-      price: "₹999",
-      image:
-        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=1200&auto=format&fit=crop",
-    },
-  ];
+ const products = [
+  {
+    name: "Bubble Candle",
+    price: "₹499",
+    image:
+      "https://bellesilluminous.in/cdn/shop/files/IMG-20241124-WA0018.jpg?v=1732447460",
+  },
+  {
+    name: "Rose Candle",
+    price: "₹699",
+    image:
+      "https://bellesilluminous.in/cdn/shop/files/IMG-20241124-WA0020.jpg?v=1732447460",
+  },
+  {
+    name: "Dessert Candle",
+    price: "₹999",
+    image:
+      "https://bellesilluminous.in/cdn/shop/files/IMG-20241124-WA0015.jpg?v=1732447460",
+  },
+];
 
   return (
     <main
@@ -75,7 +75,7 @@
             key={product.name}
             style={{
               background: "white",
-              borderRadius: "25px",
+              borderRadius: "35px",
               overflow: "hidden",
               boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
             }}
@@ -85,7 +85,7 @@
               alt={product.name}
               style={{
                 width: "100%",
-                height: "320px",
+                height: "380px",
                 objectFit: "cover",
               }}
             />
