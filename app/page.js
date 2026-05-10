@@ -1,22 +1,49 @@
        export default function Home() {
  const products = [
   {
-    name: "Bubble Candle",
+    name: "Floral Dessert Glass Jar Candle",
+    price: "₹500",
+    image: "/images/dessert-candle.jpg",
+  },
+  {
+    name: "Honey Bliss Coconut Candle",
+    price: "₹350",
+    image: "/images/honey-bliss.jpg",
+  },
+  {
+    name: "Tulip Petal Layer Candle",
+    price: "₹350",
+    image: "/images/tulip.jpg",
+  },
+  {
+    name: "Romantic Swan Candle",
     price: "₹499",
-    image:
-      "https://bellesilluminous.in/cdn/shop/files/IMG-20241124-WA0018.jpg?v=1732447460",
+    image: "/images/romantic-swan.jpg",
   },
   {
-    name: "Rose Candle",
-    price: "₹699",
-    image:
-      "https://bellesilluminous.in/cdn/shop/files/IMG-20241124-WA0020.jpg?v=1732447460",
+    name: "Snowflake Glass Candle",
+    price: "₹499",
+    image: "/images/snowflake.jpg",
   },
   {
-    name: "Dessert Candle",
-    price: "₹999",
-    image:
-      "https://bellesilluminous.in/cdn/shop/files/IMG-20241124-WA0015.jpg?v=1732447460",
+    name: "Shell Design Soy Candle",
+    price: "₹300",
+    image: "/images/shell.jpg",
+  },
+  {
+    name: "Rose Heart Tealight Set",
+    price: "₹199",
+    image: "/images/rose-heart.jpg",
+  },
+  {
+    name: "Lavender Heart Tealights",
+    price: "₹199",
+    image: "/images/lavender.jpg",
+  },
+  {
+    name: "Citrus Blossom Tealights",
+    price: "₹299",
+    image: "/images/citrus.jpg",
   },
 ];
 
