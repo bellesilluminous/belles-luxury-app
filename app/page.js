@@ -5,89 +5,113 @@ export default function Home() {
       image:
         "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1200&auto=format&fit=crop",
     },
+
     {
       title: "Jar Candles",
       image:
-        "https://images.unsplash.com/photo-1630585308572-f53438fc684f?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1630939687530-241a4f9c0b52?q=80&w=1200&auto=format&fit=crop",
     },
-    {
-      title: "Dessert Candles",
-      image:
-        "https://images.unsplash.com/photo-1608181831718-15fcd74bceaa?q=80&w=1200&auto=format&fit=crop",
-    },
+
     {
       title: "Floral Candles",
       image:
-        "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1612198528636-c3a1ec5d9b63?q=80&w=1200&auto=format&fit=crop",
     },
+
+    {
+      title: "Dessert Candles",
+      image:
+        "https://images.unsplash.com/photo-1608181831718-8f6f4f2f7a5a?q=80&w=1200&auto=format&fit=crop",
+    },
+
     {
       title: "Gift Collection",
       image:
         "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=1200&auto=format&fit=crop",
     },
+
     {
       title: "Buddha Candles",
       image:
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1602874801006-69c1e5f5f33e?q=80&w=1200&auto=format&fit=crop",
     },
-    {
-      title: "Tealight Candles",
-      image:
-        "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
-    },
+
     {
       title: "Candles in Wooden Bowls",
       image:
-        "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1616628182509-6d5d8d3e1e44?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Tealight Candles",
+      image:
+        "https://images.unsplash.com/photo-1608181831718-8f6f4f2f7a5a?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Artisan Candles",
+      image:
+        "https://images.unsplash.com/photo-1630939687530-241a4f9c0b52?q=80&w=1200&auto=format&fit=crop",
+    },
+
+    {
+      title: "Flower & Bouquet Candles",
+      image:
+        "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
     },
   ];
 
   return (
     <main
       style={{
-        background: "#f8f3ed",
+        background: "#f7f2eb",
         minHeight: "100vh",
         fontFamily: "Georgia, serif",
       }}
     >
       {/* HERO SECTION */}
+
       <section
         style={{
           height: "100vh",
-          backgroundImage:
-            "url('/images/ChatGPT Image May 10, 2026, 06_57_32 PM.png')",
+          backgroundImage: "url('/images/hero-bg.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          textAlign: "center",
           position: "relative",
+          textAlign: "center",
         }}
       >
+        {/* DARK OVERLAY */}
+
         <div
           style={{
             position: "absolute",
             inset: 0,
-            background: "rgba(0,0,0,0.35)",
+            background: "rgba(0,0,0,0.45)",
           }}
-        ></div>
+        />
+
+        {/* CONTENT */}
 
         <div
           style={{
             position: "relative",
             zIndex: 2,
-            color: "#f6e7c8",
             padding: "20px",
           }}
         >
           <h1
             style={{
               fontSize: "110px",
-              fontWeight: "bold",
+              color: "#f5dfb2",
               fontFamily: "cursive",
+              fontWeight: "bold",
               marginBottom: "20px",
-              textShadow: "0 4px 20px rgba(0,0,0,0.4)",
+              textShadow: "0 6px 30px rgba(0,0,0,0.7)",
+              lineHeight: "1",
             }}
           >
             Belles Illuminous
@@ -95,31 +119,25 @@ export default function Home() {
 
           <p
             style={{
+              color: "#f8e8c9",
               fontSize: "26px",
               letterSpacing: "4px",
-              marginBottom: "12px",
+              textTransform: "uppercase",
+              marginBottom: "45px",
             }}
           >
-            LUXURY HANDMADE CANDLES
-          </p>
-
-          <p
-            style={{
-              fontSize: "22px",
-              letterSpacing: "3px",
-              marginBottom: "40px",
-            }}
-          >
-            CRAFTED TO TRANSFORM EVERY MOMENT
+            Luxury Handmade Candles
+            <br />
+            Crafted To Transform Every Moment
           </p>
 
           <button
             style={{
-              padding: "18px 50px",
-              border: "2px solid #f6d27a",
+              padding: "18px 55px",
               background: "transparent",
-              color: "#f6e7c8",
-              fontSize: "20px",
+              border: "2px solid #d8b36a",
+              color: "#f5dfb2",
+              fontSize: "18px",
               letterSpacing: "3px",
               cursor: "pointer",
             }}
@@ -130,20 +148,20 @@ export default function Home() {
       </section>
 
       {/* COLLECTIONS */}
+
       <section
         style={{
           maxWidth: "1400px",
           margin: "0 auto",
-          padding: "80px 40px",
+          padding: "100px 50px",
         }}
       >
         <h2
           style={{
             textAlign: "center",
-            fontSize: "52px",
-            marginBottom: "70px",
+            fontSize: "60px",
             color: "#3e3129",
-            fontFamily: "Georgia, serif",
+            marginBottom: "70px",
           }}
         >
           Collections
@@ -153,18 +171,17 @@ export default function Home() {
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "40px",
+            gap: "35px",
           }}
         >
           {categories.map((category) => (
             <div
               key={category.title}
               style={{
-                background: "white",
-                borderRadius: "20px",
+                background: "#fff",
+                borderRadius: "10px",
                 overflow: "hidden",
                 boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-                transition: "0.3s",
               }}
             >
               <img
@@ -172,17 +189,22 @@ export default function Home() {
                 alt={category.title}
                 style={{
                   width: "100%",
-                  height: "400px",
+                  height: "420px",
                   objectFit: "cover",
                 }}
               />
 
-              <div style={{ padding: "24px" }}>
+              <div
+                style={{
+                  padding: "24px",
+                  background: "#fffdf9",
+                }}
+              >
                 <h3
                   style={{
                     fontSize: "28px",
                     color: "#3e3129",
-                    marginBottom: "20px",
+                    marginBottom: "12px",
                   }}
                 >
                   {category.title}
@@ -190,18 +212,15 @@ export default function Home() {
 
                 <button
                   style={{
-                    width: "100%",
-                    padding: "16px",
-                    borderRadius: "50px",
+                    background: "transparent",
                     border: "none",
-                    background: "#3e3129",
-                    color: "white",
-                    fontSize: "16px",
+                    color: "#9b6b2f",
+                    fontSize: "18px",
                     cursor: "pointer",
-                    letterSpacing: "2px",
+                    padding: 0,
                   }}
                 >
-                  Explore Collection
+                  Explore →
                 </button>
               </div>
             </div>
